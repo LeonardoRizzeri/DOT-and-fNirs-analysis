@@ -40,19 +40,6 @@ DOT-and-fNirs-analysis/
     └── README.md
 ```
 
-## Data and Large Files
-
-The complete local project contains several binary resources that should not be committed directly to GitHub:
-
-| File or directory | Size | GitHub decision | Reason |
-|---|---:|---|---|
-| `code/main.m` | ~17 KB | Include | Core MATLAB analysis script |
-| `code/removeNoisyChannels.m` | <1 KB | Include | Channel quality-control helper |
-| `CCW1.nirs` | ~48 MB | Exclude from Git; store externally | Experimental fNIRS data; acceptable size technically, but better treated as data |
-| `CCW.jac` | ~3.4 GB | Exclude from Git | Far above practical GitHub repository size; precomputed model/data artifact |
-| `vol2gm.mat` | ~1.8 MB | Optional external data | Binary transform matrix needed for reconstruction |
-| `MNI152_headModel/` | ~26 MB zipped | Exclude from Git; document setup | Anatomical model resource |
-| `iso2mesh-master/` | ~30 MB zipped | Exclude from Git; install from source | Third-party dependency, should not be vendored |
 
 For reproducibility, place local resources in the following structure after cloning:
 
