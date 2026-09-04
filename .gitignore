@@ -1,0 +1,61 @@
+# MATLAB
+*.asv
+*.m~
+*.autosave
+*.slxc
+*.mex*
+*.fig
+*.mlappinstall
+*.prj
+
+# MATLAB generated outputs
+*.mat
+*.nii
+*.nii.gz
+*.gii
+*.mgz
+*.img
+*.hdr
+
+# fNIRS / DOT data and model artifacts
+*.nirs
+*.snirf
+*.jac
+*.sd
+*.evt
+*.nirx
+data/*
+models/MNI152_headModel/*
+
+# Keep documentation placeholders
+!data/README.md
+!models/README.md
+
+# Third-party dependencies and vendored toolboxes
+external/*
+iso2mesh-master/
+iso2mesh-master.zip
+Homer2/
+Homer3/
+
+# Archives and compressed resources
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs and temporary outputs
+*.log
+tmp/
+temp/
+outputs/
+results/
+figures/generated/
